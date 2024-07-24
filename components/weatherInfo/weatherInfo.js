@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faThermometer} from '@fortawesome/free-solid-svg-icons/faThermometer';
 import { faCity } from '@fortawesome/free-solid-svg-icons/faCity';
 import { faEarthAsia } from '@fortawesome/free-solid-svg-icons/faEarthAsia';
+
 const WeatherInfo = () => {
 location = useSelector(state => state.location)
 const call = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=yes`
